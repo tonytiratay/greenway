@@ -1,5 +1,9 @@
-<h1>Listing activites</h1>
 
+
+<h1>Listing activites</h1>
+<%= link_to 'Nouvelle Activité', new_activite_path, class: 'button small success round', style:"float:right;" %>
+
+<div style="clear:both;">
 <table>
   <thead>
     <tr>
@@ -28,14 +32,13 @@
         <td><%= activite.adresse %></td>
         <td><%= activite.datedebut %></td>
         <td><%= activite.datefin %></td>
-        <td><%= link_to 'Show', activite %></td>
-        <td><%= link_to 'Edit', edit_activite_path(activite) %></td>
-        <td><%= link_to 'Destroy', activite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Voir', activite %></td>
+        <td><%= link_to 'Editer', edit_activite_path(activite) %></td>
+        <td><%= link_to 'Supprimer', activite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
-<%= link_to 'New Activite', new_activite_path %>

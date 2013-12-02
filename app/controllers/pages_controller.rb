@@ -1,11 +1,19 @@
 class PagesController < ApplicationController
 
-	def new
+	def accueil
 	
 	end
 
-	def edit
+	def contact
 
+	end
+
+	def faq
+		
+	end
+
+	def activites
+		
 	end
 
 end

@@ -10,7 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="actions">
+    <%= f.submit 'Créer', class: 'button small round success', style: 'color:#fff; float:right;  margin-top:15px; margin-left:10px;'%>
+    <%= link_to 'Retour', activites_path, class: "button small round success", style: "float:right; margin-top:15px;" %>
+  </div>
+<div class="row" style="clear: both;">
+  <div class="large-6 small-12 columns">
   <div class="field">
     <%= f.label :titre %><br>
     <%= f.text_field :titre %>
@@ -20,13 +25,16 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :typeactivite %><br>
+    <%= f.label "Type d'activité" %><br>
     <%= f.text_field :typeactivite %>
   </div>
   <div class="field">
     <%= f.label :prix %><br>
     <%= f.text_field :prix %>
   </div>
+  </div>
+  <div class="large-6 small-12 columns">
+  <div class="field">
   <div class="field">
     <%= f.label :pays %><br>
     <%= f.text_field :pays %>
@@ -36,14 +44,14 @@
     <%= f.text_field :adresse %>
   </div>
   <div class="field">
-    <%= f.label :datedebut %><br>
-    <%= f.date_select :datedebut %>
+    <%= f.label "Date de debut (jj/mm/aa)" %><br>
+    <%= f.date_field :datedebut %>
   </div>
   <div class="field">
-    <%= f.label :datefin %><br>
-    <%= f.date_select :datefin %>
+    <%= f.label "Date de fin (jj/mm/aa)" %><br>
+    <%= f.date_field :datefin %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
   </div>
+
+</div>
 <% end %>
