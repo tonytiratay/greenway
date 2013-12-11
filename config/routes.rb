@@ -1,6 +1,6 @@
 Greenway::Application.routes.draw do
   resources :activites
-  root 'activites#index'
+  root 'pages#accueil'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
