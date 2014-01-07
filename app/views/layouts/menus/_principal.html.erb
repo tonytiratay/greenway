@@ -5,7 +5,11 @@
 	</ul> 
 	<section class="top-bar-section">
 		<ul class="right"> 
-			<li class="active"><a href="#">Publiez votre annonce</a></li> 
+			<li class="active has-dropdown"><%= link_to "Publiez votre annonce", new_activite_path %> 
+		        <ul class="dropdown">
+		          <li><a href="#">First link in dropdown</a></li>
+		        </ul>
+      		</li>
 			
 		</ul>
 		<ul class="left"> 
@@ -18,7 +22,6 @@
 					</div> 
 				</div> 
 			</li>
-			<li><a href="#">Naviguer</a></li> 
 			<li><%= link_to "Activités" , activites_path %></li>
 			<li><a href="#">Newsletter</a></li> 
 			<li><a href="#">Aide</a></li> 

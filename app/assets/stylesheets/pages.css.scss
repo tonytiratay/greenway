@@ -4,7 +4,9 @@
 
 .diapo-container {
 	background: url(demo/paysage2.jpg);
-	padding: 150px 30px 150px 30px;	
+	background-repeat: none;
+	background-size: cover;
+	padding: 120px 30px 120px 30px;	
 }
 
 .diapo-search {
@@ -12,5 +14,19 @@
 	h1,h2,h3,h4 {
 	text-shadow: 1px 1px 2px #333;
 	color:white;
+	}
+}
+
+.form-accueil {
+	height: 50px;
+}
+
+.rubrique {
+	padding:20px;
+	text-align: center;
+
+	img {
+	width:40%;
+	text-align: center;
 	}
 }
