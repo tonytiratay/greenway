@@ -1,7 +1,7 @@
 <div class="contain-to-grid fixed">
 <nav class="top-bar" data-topbar> 
 	<ul class="title-area"> 
-		<li class="name"> <h1><a href="#">GreenWay</a></h1> </li> 
+		<li class="name"> <h1><%= link_to "Play It Green", root_url %></h1> </li> 
 	</ul> 
 	<section class="top-bar-section">
 		<ul class="right"> 
@@ -19,6 +19,7 @@
 				</div> 
 			</li>
 			<li><a href="#">Naviguer</a></li> 
+			<li><%= link_to "Activités" , activites_path %></li>
 			<li><a href="#">Newsletter</a></li> 
 			<li><a href="#">Aide</a></li> 
 		</ul> 
