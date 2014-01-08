@@ -5,25 +5,22 @@
 	</ul> 
 	<section class="top-bar-section">
 		<ul class="right"> 
-			<li class="active has-dropdown"><%= link_to "Publiez votre annonce", new_activite_path %> 
-		        <ul class="dropdown">
-		          <li><a href="#">First link in dropdown</a></li>
-		        </ul>
+			<li class="active"><%= link_to "Publiez votre annonce", new_activite_path %> 
+		        
       		</li>
 			
 		</ul>
 		<ul class="left"> 
-		<li class="has-form"> 
-			<div class="row collapse"> 
-				<div class="large-8 small-9 columns"> 
-					<input type="text" placeholder="Où allez vous ?"> </div> 
-					<div class="large-4 small-3 columns"> 
-						<a href="#" class="button success">Chercher</a> 
-					</div> 
-				</div> 
+			<li class="has-form">
+			  <div class="row collapse">
+			    <div class="small-12 columns">
+			      <input type="text" placeholder="Destination">
+			    </div>
+			  </div>
 			</li>
 			<li><%= link_to "Activités" , activites_path %></li>
 			<li><a href="#">Newsletter</a></li> 
+			<li><%= link_to "Connexion", new_user_session_path %></li> 
 			<li><a href="#">Aide</a></li> 
 		</ul> 
 	</section> 

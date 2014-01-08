@@ -2,42 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.top-bar  {
+	input {
+		padding: 5px;
+		margin-top: 10px;
+		font-size: 1.2em;
+	}
+}
 .diapo-container {
 	background: url(demo/paysage2.jpg);
 	background-repeat: none;
 	background-size: cover;
-	padding: 100px 0 0px 0;	
+	padding: 60px 0 60px 0;	
 }
 
 .diapo-search {
 	margin: auto;
-	padding: 50px 0 20px 0;
-	background: rgba(0,0,0,0.4);
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.45)), color-stop(100%,rgba(0,0,0,0.25)));
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.25) 100%);
-background: -o-linear-gradient(top,  rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.25) 100%);
-background: -ms-linear-gradient(top,  rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.25) 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.25) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', endColorstr='#40000000',GradientType=0 );
+	max-width: 960px;
+	padding: 20px 30px 20px 30px;
+		text-align: center;
+	background: rgba(0,0,0,0.2);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 48%, rgba(0,0,0,0.5) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(48%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0.5)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 48%,rgba(0,0,0,0.5) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 48%,rgba(0,0,0,0.5) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 48%,rgba(0,0,0,0.5) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 48%,rgba(0,0,0,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
 
--webkit-box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
-box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	border: thin #656565 solid;
+	
+		img {
+			text-align: center;
+			width: 150px;
+			height: 150px;
+			padding: 30px;
+		}
 
-
-	border: thin #A7A7A7 solid;
 		h1,h2 {
-			text-shadow: 1px 1px 12px #333;
-			font-size: 3.3em;
+			font-size: 3em;
 			color:white;
 			margin: 0 0 10px 0;
 		}
 
 		h3,h4 {
-			text-shadow: 1px 1px 12px #333;
-			font-size: 2em;
+			font-size: 1.8em;
 			color:#dcdcdc;
 			margin: 30px;
+			text-align: right;
 		}
 
 		input {
