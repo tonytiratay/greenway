@@ -1,0 +1,27 @@
+<h1>Listing clientmails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mail</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clientmails.each do |clientmail| %>
+      <tr>
+        <td><%= clientmail.mail %></td>
+        <td><%= link_to 'Show', clientmail %></td>
+        <td><%= link_to 'Edit', edit_clientmail_path(clientmail) %></td>
+        <td><%= link_to 'Destroy', clientmail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clientmail', new_clientmail_path %>

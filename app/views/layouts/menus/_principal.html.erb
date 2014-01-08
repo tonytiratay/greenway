@@ -11,6 +11,7 @@
 			
 		</ul>
 		<ul class="left"> 
+			<% if user_signed_in? %>  
 			<li class="has-form">
 			  <div class="row collapse">
 			    <div class="small-12 columns">
@@ -21,7 +22,7 @@
 			<li><%= link_to "Activités" , activites_path %></li>
 			<li><a href="#">Newsletter</a></li> 
 			<li><a href="#">Aide</a></li> 
-			<% if user_signed_in? %>  
+			
 			<li><%= link_to('Déconnexion', destroy_user_session_path, :method => :delete) %></li>
 			<% else %>
 			  <li><%= link_to('Connexion', new_user_session_path)  %></li>

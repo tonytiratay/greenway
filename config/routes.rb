@@ -1,4 +1,6 @@
 Greenway::Application.routes.draw do
+  resources :clientmails
+
   devise_for :users
   resources :activites
   root 'pages#accueil'
