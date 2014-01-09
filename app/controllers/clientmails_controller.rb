@@ -13,9 +13,6 @@ class ClientmailsController < ApplicationController
   def show
   end
 
-  def mailsuccess
-  end
-
   # GET /clientmails/new
   def new
     @clientmail = Clientmail.new
@@ -32,10 +29,10 @@ class ClientmailsController < ApplicationController
 
     respond_to do |format|
       if @clientmail.save
-        format.html { render "mailsuccess", notice: 'Clientmail was successfully created.' }
-        format.json { render "mailsuccess", status: :created, location: @clientmail }
+        format.html { redirect_to "http://localhost:3000", notice: 'Votre mail a bien été enregistré.' }
+        format.json { redirect_to "http://localhost:3000", status: :created, location: @clientmail }
       else
-        format.html { render "mailerror" }
+        format.html { redirect_to "http://localhost:3000", notice: 'Ce mail existe déjà ou il est invalide.'  }
         format.json { render json: @clientmail.errors, status: :unprocessable_entity }
       end
     end

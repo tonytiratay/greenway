@@ -41,17 +41,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', e
 			padding: 30px;
 		}
 
-		h1,h2 {
+		h1 {
 			font-size: 3em;
+			color:white;
+			margin: 0 0 10px 0;
+			font-weight: bold;
+			text-align:center;
+		}
+
+		h2 {
+			font-size: 2.4em;
 			color:white;
 			margin: 0 0 10px 0;
 		}
 
 		h3,h4 {
-			font-size: 1.8em;
+			font-size: 1.5em;
 			color:#dcdcdc;
-			margin: 30px;
-			text-align: right;
+			margin: 0px 0 0 0;
+			text-align: center;
+		}
+
+		input {
+			padding: 13px;
+			line-height: 30px;
 		}
 
 }
@@ -65,3 +78,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', e
 	text-align: center;
 	}
 }
+
+

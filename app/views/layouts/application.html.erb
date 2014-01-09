@@ -13,15 +13,13 @@
 
   <body>
     <%= render'layouts/menus/principal' %>
-<div><br/><br/><br/>
-
-<!-- 
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p> -->
+<div><br/>    
 
 
 
     <%= yield %>
+      <p class="enregistre"><%= notice %></p>  
+  <p class="error"><%= alert %></p> 
  <%= javascript_include_tag "application" %> 
 
 </div>

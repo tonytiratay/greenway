@@ -1,3 +1,4 @@
+<div class="row">
 <h1>Listing clientmails</h1>
 
 <table>
@@ -14,14 +15,12 @@
     <% @clientmails.each do |clientmail| %>
       <tr>
         <td><%= clientmail.mail %></td>
-        <td><%= link_to 'Show', clientmail %></td>
-        <td><%= link_to 'Edit', edit_clientmail_path(clientmail) %></td>
-        <td><%= link_to 'Destroy', clientmail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_clientmail_path(clientmail), class:"button small rounded alert" %></td>
+        <td><%= link_to 'Destroy', clientmail, method: :delete, class:"button small rounded alert" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Clientmail', new_clientmail_path %>
+</div>
