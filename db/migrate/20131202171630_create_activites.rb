@@ -5,7 +5,6 @@ class CreateActivites < ActiveRecord::Migration
       t.text :description
       t.string :typeactivite
       t.string :prix
-      t.string :pays
       t.string :adresse
       t.date :datedebut
       t.date :datefin

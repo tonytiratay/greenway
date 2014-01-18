@@ -2,18 +2,13 @@ class ClientmailsController < ApplicationController
   before_action :set_clientmail, only: [:show, :edit, :update, :destroy]
 
 
-  # GET /clientmails
-  # GET /clientmails.json
   def index
     @clientmails = Clientmail.all
   end
 
-  # GET /clientmails/1
-  # GET /clientmails/1.json
   def show
   end
 
-  # GET /clientmails/new
   def new
     @clientmail = Clientmail.new
   end
@@ -22,8 +17,6 @@ class ClientmailsController < ApplicationController
   def edit
   end
 
-  # POST /clientmails
-  # POST /clientmails.json
   def create
     @clientmail = Clientmail.new(clientmail_params)
 

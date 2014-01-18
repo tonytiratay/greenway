@@ -8,21 +8,19 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
+
     <%= csrf_meta_tags %>
   </head>
 
   <body>
     <%= render'layouts/menus/principal' %>
-<div><br/>    
+    <div><br/>    
+            <%= javascript_include_tag "application" %> 
+
+        <%= yield %>
+    </div>
 
 
-
-    <%= yield %>
-      <p class="enregistre"><%= notice %></p>  
-  <p class="error"><%= alert %></p> 
- <%= javascript_include_tag "application" %> 
-
-</div>
-<div class="row"><br/><br/><br/><br/><br/><br/><br/><br/><br/> </div>
   </body>
+
 </html>

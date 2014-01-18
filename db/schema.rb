@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140108154012) do
+ActiveRecord::Schema.define(version: 20140116193615) do
 
   create_table "activites", force: true do |t|
     t.string   "titre"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20140108154012) do
     t.date     "datefin"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "clientmails", force: true do |t|
