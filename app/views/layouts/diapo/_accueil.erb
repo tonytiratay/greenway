@@ -22,8 +22,13 @@
 							      </ul>
 							    </div>
 							  <% end %>
-
+				
+				<div class="row collapse">
+				<div class="small-10 columns ">
 				<%= f.text_field :mail, placeholder: "mon@mail.com" %>
+				</div>
+				<div class="small-2 columns"><%= f.submit "Envoyer", class:"button postfix"%></div>
+				</div>
 				<h3 style="color:white;">Rester informé sur nos activiteés nature</h3>
 			</div>
 
