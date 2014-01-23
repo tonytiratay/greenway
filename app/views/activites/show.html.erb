@@ -1,47 +1,54 @@
+<br/><br/><br/>
 <div  class="row">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Titre:</strong>
-  <%= @activite.titre %>
-</p>
+<div class="row">
+  <div class="small-12 large-6 columns">
+    <h1><%= @activite.titre %></h1>
 
-<p>
-  <strong>Description:</strong>
-  <%= @activite.description %>
-</p>
+        <p>
+          <strong>Description:</strong>
+          <%= @activite.description %>
+        </p>
 
-<p>
-  <strong>Typeactivite:</strong>
-  <%= @activite.typeactivite %>
-</p>
+        <p>
+          <strong>Typeactivite:</strong>
+          <%= @activite.typeactivite %>
+        </p>
 
-<p>
-  <strong>Prix:</strong>
-  <%= @activite.prix %>
-</p>
+        <p>
+          <strong>Prix:</strong>
+          <%= @activite.prix %>
+        </p>
 
-<p>
-  <strong>Pays:</strong>
-  <%= @activite.pays %>
-</p>
 
-<p>
-  <strong>Adresse:</strong>
-  <%= @activite.adresse %>
-</p>
-<div style='width: 800px;'>
-  <div id="map" style='width: 800px; height: 400px;'></div>
+          <strong>Datedebut:</strong>
+          <%= @activite.datedebut %>
+        </p>
+
+        <p>
+          <strong>Datefin:</strong>
+          <%= @activite.datefin %>
+        </p>
+
+
+        <p>
+          <strong>Adresse:</strong>
+          <%= @activite.adresse %>
+        </p>
+  </div>
+
+  <div class="small-12 large-6 columns">
+    <div style='width: 800px;'>
+    <div id="map" style='width: 400px; height: 440px;'></div>
+    </div>
+  </div>
+
+
 </div>
-<p>
-  <strong>Datedebut:</strong>
-  <%= @activite.datedebut %>
-</p>
+  
 
 <p>
-  <strong>Datefin:</strong>
-  <%= @activite.datefin %>
-</p>
 
 <%= link_to 'Edit', edit_activite_path(@activite) %> |
 <%= link_to 'Back', activites_path %>
